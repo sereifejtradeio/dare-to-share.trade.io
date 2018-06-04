@@ -14,9 +14,9 @@ $(window).load(function() {
 }), $(document).ready(function() {
     "use strict";
     $("#open-newsletter , .close-newsletter").on("click", function() {
-        return $(".fp-section , #info").toggleClass("newsletter-opened"), !1
+        return $(".fp-section , #info").toggleClass("newsletter-opened"), $("body").toggleClass("bodyfix"),$(".action-btn").toggleClass("Notifyfix"), !1
     }), $(document).click(function(e) {
-        "info" === e.target.id || $("#info").find(e.target).length || $(".fp-section , #info").removeClass("newsletter-opened")
+        "info" === e.target.id || $("#info").find(e.target).length || $(".fp-section , #info").removeClass("newsletter-opened");$("body").removeClass("bodyfix");$(".action-btn").removeClass("Notifyfix")
     }), $("#notifyMe").notifyMe(), $("#fullpage").fullpage({
         navigation: !0,
         navigationTooltips: ["Home", "About", "The Facts", "The Holiday", "Dare-To-Share", "Announcements & Updates", "Contact"],
