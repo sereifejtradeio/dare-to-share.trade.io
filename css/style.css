@@ -903,9 +903,59 @@ sup {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
+#c9-button.c9-image img {
+    max-width: 100%;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    transform: scale(0.8);
+    opacity:0.7;
+    transition: all 0.2s;
+}
+#c9-button.c9-image img:hover {
+    opacity:1;
+}
+#c9-popup.c9-shown
+{
+    transform:scale(0.8);
+}
+.Gleam_info{
+        width: 66%;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    line-height: 3rem;
+    padding: 2rem;
+}
+.DTS_CTA
+{
+    width: 24rem;
+    opacity: 0.7;
+    transition: all 0.4s;
+}
+.DTS_CTA:hover
+{
+    opacity: 1;
+}
 .boldify {
     font-weight: 800;
+}
+
+h3.number
+{
+    font-size:6rem !important;
+}
+h4.number
+{
+    font-size:2.4rem !important;
+}
+h3.txtnumber
+{
+    font-size:3rem !important;
+    margin-top:-2rem;
 }
 .center-col{
     text-align:center;
@@ -1048,16 +1098,16 @@ div#overlay34 {
 }
 
 div#overlayplus34 {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    height: fit-content;
-    display: block;
+    height: 100%;
+    display: inherit;
     background: rgba(31, 31, 31, 0.81);
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -1;
+    /* z-index: -1; */
     margin: auto;
     padding: 25px;
 }
@@ -1981,8 +2031,8 @@ p.fact-sub-text {
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     transition: all .4s ease;
-    border-bottom: 1px solid black;
-    box-shadow: black -2px 5px 14px 1px;
+    /* border-bottom: 1px solid black; */
+    /* box-shadow: black -2px 5px 14px 1px; */
 }
 
 .fp-section.newsletter-opened {
@@ -2451,7 +2501,7 @@ p.fact-sub-text {
     }
     .spec-padding-bottom {
         padding-bottom: 35% !important;
-        top: 4rem;
+        /* top: 4rem; */
     }
     #info {
         padding: 10% 0
