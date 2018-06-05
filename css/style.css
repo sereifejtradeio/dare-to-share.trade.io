@@ -580,7 +580,19 @@ sup {
     -moz-animation: ring 1.5s infinite linear;
     animation: ring 1.5s infinite linear
 }
-
+.e-widget-wrapper {
+    box-shadow: none !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    left: 0;
+    height: 100%;
+    bottom: 0;
+}
+.e-widget-wrapper iframe {
+    transform: scale(0.7);
+}
 @-webkit-keyframes ring {
     0% {
         -webkit-transform: rotate(0deg)
@@ -2248,7 +2260,7 @@ p.fact-sub-text {
     z-index: 0;
     left: 0;
     padding: 0;
-    top: 50%;
+    top: 30%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -2266,7 +2278,8 @@ p.fact-sub-text {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     opacity: 1;
-    visibility: visible
+    visibility: visible;
+    height: 500px;
 }
 
 #info .content .brand-logo {
