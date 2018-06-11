@@ -1246,6 +1246,19 @@ div#overlayplus14 {
     z-index: -1;
 }
 
+.SpanFrame
+{
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 .money {
     font-size: 6rem !important;
     /*        line-height:0;*/
@@ -1953,13 +1966,13 @@ p.fact-sub-text {
 }
 
 .map-info #map {
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     position: relative;
     z-index: 5;
     top: 0;
     left: 0;
-    color: #232323 !important
+    color: #232323 !important;
 }
 
 .map-info #map .gm-style-iw {
