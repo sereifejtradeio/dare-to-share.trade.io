@@ -20,7 +20,7 @@
 
 <body>
 
-    <a class="action-btn" id="open-newsletter">Notify me</a>
+<!--    <a class="action-btn" id="open-newsletter">Notify me</a>-->
     <div id="loading">
         <div id="preloader">
             <img alt="" class="loading-logo" src="img/logo-colored.png"><span class="loading-text">Loading Viral Campaign</span><span class="load"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></span>
@@ -52,8 +52,21 @@
             </div>
         </div>
         <div class="section" id="section_video">
-           <div class="SpanFrame"> <span class="span1"></span><span class="span2"></span><span class="span3"></span><span class="span4"></span> </div>
-            <div id="videoFrame"> <h1 class="Boldify"> Video <br> Section </h1></div>
+
+                <video id="videofront" controls>
+                      <source src="video/video.mp4" type="video/mp4">
+                </video> 
+<!--
+           <div class="SpanFrame"> <span class="span1"></span><span class="span2"></span><span class="span3"></span><span class="span4"></span>
+
+            </div>
+-->
+<!--
+            <div id="videoFrame">
+
+                <h1 class="Boldify"> Video <br> Section </h1></div>
+        </div>
+-->
         </div>
         <div class="section" id="section1">
             <section class="text-left-block" id="about">
@@ -201,34 +214,28 @@
             </section>
         </div>
         <div class="section" id="section4">
-            <div id="overlay14"></div>
-            <div id="overlayplus14"></div>
-            <div class="text-left-center" id="section_nan">
-                <div class="col-xs-12 col-sm-12 col-lg-12 left-center-text split-section spec-padding-bottom" style="margin-top:4rem;">
+            <section class="text-left-block" id="about">
+                <div class="row row-no-margin">
+                    <div class="col-xs-12 col-sm-6 col-lg-6 slideshow-about split-section" id="invert-slideshow">
+                    <a class="e-widget no-button generic-loader" href="https://gleam.io/TDvJ6/dare-to-share-test" rel="nofollow"></a>
+                    <script type="text/javascript" src="https://js.gleam.io/e.js"></script>
 
-                    <h3 class="boldify">DARE TO SHARE</h3>
-                    <h1>Start Sharing to Win</h1>
-                    <p class="Gleam_info">
-                        90 winners will win a fully paid trip to sunny Cyprus! 1 of these winners will ALSO win a luxury VIP holiday around the world, with 100,000 USD spending money
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section" id="invert-text">
+                        <div id="overlay12"></div>
+                        <div id="overlayplus2"></div>
+                        <div class="left-center-part">
+                            <h2>DARE TO SHARE</h2>
+                            <p style="font-size:1.8rem;">Start Sharing to Win</p>
+                            <br>
+                            <p style="font-size:2rem;color:white">   90 winners will win a fully paid trip to sunny Cyprus! 1 of these winners will ALSO win a luxury VIP holiday around the world, with 100,000 USD spending money
                         <br>
                         <br> Agenda: Welcome cocktails, luxury cruise around the island, tour of the old city of Limassol, visit and goodie bags to the trade.io Cyprus serviced office, black tie gala dinner extravaganza!
-                    </p>
-<!--
-                    <a class="e-widget no-button generic-loader" href="https://gleam.io/TDvJ6/dare-to-share-test" target="_blank" rel="nofollow"><img class="DTS_CTA" src="https://d36eyd5j1kt1m6.cloudfront.net/user-assets/1132827/K68nw1eylKe84rRY/untitled-1.png" alt="Competition"></a>
-                    <script type="text/javascript">
-                        (function(d, t) {
-                            if (window.location.hash != '#gleam' && ('' + document.cookie).match(/(^|;)\s*GleamTDvJ6=X($|;)/)) {
-                                return;
-                            }
-                            var g = d.createElement(t),
-                                s = d.getElementsByTagName(t)[0];
-                            g.src = "https://js.gleam.io/TDvJ6/ol.js";
-                            s.parentNode.insertBefore(g, s);
-                        }(document, "script"));
-                    </script>
--->
+</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="section" id="section5">
             <div id="overlay34"></div>
@@ -312,158 +319,22 @@
     <div class="section" id="section6">
         <section class="text-left-block" id="contact">
             <div class="row row-no-margin">
-<!--
-                <div class="col-xs-12 col-sm-6 col-lg-6 left-center-text split-section spec-padding-bottom">
-                    <div id="overlay13"></div>
-                    <div id="overlayplus3"></div>
-                    <div class="left-center-part">
-                        <h2>Sign Up Now</h2>
-                        <p class="subtitle">To win a <strong>fully paid trip to Cyprus</strong> and get a chance to win the trip of a lifetime <strong>worth $100k</strong> </p>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-12">
-                                <form data-name="Contact Form" id="contact-form" method="post" name="contact-form">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-lg-12 display-none">
-                                            <div class="form-group">
-                                                <input class="form form-control" data-name="Checking" id="checking" name="checking" onblur="this.placeholder='Leave this field empty'" onfocus="this.placeholder=''" placeholder="Leave this field empty" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input class="form form-control" autocomplete='name' data-name="Name" id="name" name="name" onblur="this.placeholder='Name*'" onfocus="this.placeholder=''" placeholder="Name*" required="" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input class="form form-control" autocomplete='email' data-name="Email Address" id="email" name="email-address" onblur="this.placeholder='Email Address*'" onfocus="this.placeholder=''" placeholder="Email Address*" required="" type="email">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input class="form form-control" autocomplete="name" data-name="Company" id="company" name="company" onblur="this.placeholder='Company name'" onfocus="this.placeholder=''" placeholder="Company name" required="" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input class="form form-control" autocomplete='tel-national' data-name="Phone" id="phone" name="phone" onblur="this.placeholder='Phone number*'" onfocus="this.placeholder=''" placeholder="Phone number*" required="" type="tel">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-lg-12">
-                                            <div class="form-group">
-                                                <textarea class="form textarea form-control" data-name="Text Area" id="text-area" name="message" onblur="this.placeholder='Your message here*... 20 characters Min.'" onfocus="this.placeholder=''" placeholder="Your message here*... 20 characters Min." required=""></textarea>
-                                            </div>
-                                            <span class="sub-text">* Required fields</span>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-color" id="valid-form" type="submit">Send my Message</button>
-                                </form>
-                                <div id="block-answer">
-                                    <div id="answer">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="copyright">trade.io - © Copyright</p>
-                    </div>
-                </div>
--->
+
                 <div class="col-xs-12 col-sm-12 col-lg-12 map-info split-section">
+                    <div class="col-xs-12 col-sm-6 col-lg-6">
                     <div id="map">
                     </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                        hello
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-lg-12 map-info split-section">
-
-                </div>
+         
+                
             </div>
         </section>
     </div>
-    <div class="section">
-            <div class="SpanFrame"> <span class="span1"></span><span class="span2"></span><span class="span3"></span><span class="span4"></span> </div>
-            <div id="FooterFrame"> <h1 class="Boldify"> Footer <br> Section </h1></div>
-</div>
-    <div id="info">
-        <button class="close-newsletter"><i class="icon ion-close-round"></i></button>
-        <div class="content">
-<!--
-            <img alt="" class="brand-logo" src="img/logo-colored.png">
-            <p class="subtitle">Make sure that you are subscribed to our Telegram channel and to our main website <a href="https://trade.io" target="_blank">https://trade.io</a> <strong><br>in order to keep up to date with the latest announcements.</strong></p>
-            
--->
-            <a class="e-widget no-button generic-loader" href="https://gleam.io/TDvJ6/dare-to-share-test" rel="nofollow" style="display: none"></a>
-            <script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script>
-<!--
-            <div id="subscribe">
-                <form action="php/notify-me-2.php" id="notifyMe" method="post" name="notifyMe">
-                    <div class="form-group">
-                        <div class="controls">
-                            <input class="form-control email srequiredField" id="mail-sub" name="email" onblur="this.placeholder='Click here to write your email'" onfocus="this.placeholder=''" placeholder="Click here to write your email" type="text"> <i class="fa fa-spinner opacity-0"></i>
-                            <button class="btn btn-lg submit">Get notified</button>
-                            <div class="clear">
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
--->
-<!--
-<style>
-    *{
-        margin:0;
-        padding:0;
-        border:none;
-      }
-    iframe html.enter.enter-page {
-        height: auto;
-        min-height: 100%;
-        width: 100%;
-        max-width: none;
-        overflow: visible;
-        background-attachment: fixed;
-        overflow: hidden;
-        transform: scale(0.7);
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        background: transparent;
-    }   
-    html,iframe,body{
-        width:100%;
-        height:100%;
-        }
-    html{
-        overflow:hidden
-        }
-    @media screen and (-webkit-min-device-pixel-ratio:0) {
-      html,iframe,body{
-          min-height:100%;
-        }
-    }
-</style>
- <iframe src="https://gleam.io/TDvJ6/dare-to-share-test" frameBorder="0" allowfullscreen width="100%" style="transform: scale(0.9);
-    top: 0;
-    position: absolute;
-    width: 600px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    bottom: 0;
-    overflow: hidden;"></iframe>
-<script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script>
--->
-        </div>
-        <div class="block-message">
-            <div class="message">
-                <p class="notify-valid">
-                </p>
-            </div>
-        </div>
 
-        <p class="spam-news"><i class="fa fa-lock"></i> We hate spam just as much as you do. Your email will stay secret.</p>
-    </div>
 <!--    <a class="action-btn" id="open-newsletter">Notify me</a>-->
     <div class="home-logo"></div>
     <!--    <img alt="" class="home-logo">-->
