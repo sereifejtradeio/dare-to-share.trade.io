@@ -1739,7 +1739,22 @@ function closeVideoModal(event) {
 
 
 }
+		
+$( window ).resize(function() {
+	
+  var widthL = $('#LeaderboardCont').width();
+	var heightL = $('#LeaderboardCont').height();
 
+  $('#LeaderboardCont > iframe').css("width", widthL );
+$('#LeaderboardCont > iframe').css("height", heightL );
+
+});
+
+setTimeout(
+  function() 
+  {
+    //do something special
+}, 5000);
 
 //===================================
 // Video Modal Triggers
@@ -1755,22 +1770,22 @@ $(window).scroll(function() {
 //closeVideoModal(event);
 })
 
-//		$(document).on('click', '#button-more , #indicator-scroll', function (e) {
-//			e.preventDefault();
-//			openVideoModal();
-//			var index = $(this).index();
-//			scrollPage($('.fp-section').eq(1));
+		$(document).on('click', '.button-details , #indicator-scroll', function (e) {
+			e.preventDefault();
 
-			// What you have to do here? The value to change is only the eq(X) just above.
-			// Home      = 0
-			// About     = 1
-			// Services  = 2
-			// Portfolio = 3
-			// Contact   = 4
-			// And so on...
+			var index = $(this).index();
+			scrollPage($('.fp-section').eq(4));
 
-			// Here is set the anchor to send user from home to about.
-//		});
+//			 What you have to do here? The value to change is only the eq(X) just above.
+//			 Home      = 0
+//			 About     = 1
+//			 Services  = 2
+//			 Portfolio = 3
+//			 Contact   = 4
+//			 And so on...
+//
+//			 Here is set the anchor to send user from home to about.
+		});
 		
 		
 

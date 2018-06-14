@@ -13,6 +13,14 @@ $(window).load(function() {
     }, 1400)
 }), $(document).ready(function() {
     "use strict";
+	
+	  var widthL = $('#LeaderboardCont').width();
+	var heightL = $('#LeaderboardCont').height();
+
+  $('#LeaderboardCont > iframe').css("width", widthL );
+$('#LeaderboardCont > iframe').css("height", heightL );
+	
+	
     $("#open-newsletter , .close-newsletter").on("click", function() {
         return $(".fp-section , #info").toggleClass("newsletter-opened"), $("body").toggleClass("bodyfix"),$(".action-btn").toggleClass("Notifyfix"), !1
     }), $(document).click(function(e) {
