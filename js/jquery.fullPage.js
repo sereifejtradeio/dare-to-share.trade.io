@@ -1706,11 +1706,60 @@
 			var index = $(this).parent().index();
 			scrollPage($(SECTION_SEL).eq(index));
 		}
+		
+		//===================================
 
-		$(document).on('click', '#button-more , #indicator-scroll', function (e) {
-			e.preventDefault();
-			var index = $(this).index();
-			scrollPage($('.fp-section').eq(1));
+
+
+
+//===================================
+// Video Modal Events
+//===================================
+
+function openVideoModal(event) {
+	event.preventDefault();
+	console.log("Modal should Open");
+	 $( "#gd-modal-overlay" ).animate({
+    top: 0
+  }, 200, function() {
+    // Animation complete.
+  });
+
+}
+
+
+function closeVideoModal(event) {
+	event.preventDefault();
+	$('#videofront2').trigger('pause');
+		 $( "#gd-modal-overlay" ).animate({
+    top: 1000
+  }, 200, function() {
+    // Animation complete.
+  });
+
+
+}
+
+
+//===================================
+// Video Modal Triggers
+//===================================
+
+$('#button-more').on('click', openVideoModal);
+$('#button-more').on('touchstart', openVideoModal);
+
+$('#gd-modal-overlay').on('click', closeVideoModal);
+$('#gd-modal-overlay').on('touchstart', closeVideoModal);
+		
+$(window).scroll(function() {
+//closeVideoModal(event);
+})
+
+//		$(document).on('click', '#button-more , #indicator-scroll', function (e) {
+//			e.preventDefault();
+//			openVideoModal();
+//			var index = $(this).index();
+//			scrollPage($('.fp-section').eq(1));
 
 			// What you have to do here? The value to change is only the eq(X) just above.
 			// Home      = 0
@@ -1721,7 +1770,9 @@
 			// And so on...
 
 			// Here is set the anchor to send user from home to about.
-		});
+//		});
+		
+		
 
 		//Scrolls the slider to the given slide destination for the given section
 		function slideBulletHandler(e) {
@@ -1809,6 +1860,7 @@
 				// moving down
 				else if (e.pageY > oldPageY && isScrollAllowed.m.down) {
 					FP.moveSectionDown();
+					
 				}
 			}
 			oldPageY = e.pageY;
@@ -2000,6 +2052,7 @@
 					$(SECTION_NAV_SEL).find('a[href="#' + name + '"]').addClass(ACTIVE);
 				} else {
 					$(SECTION_NAV_SEL).find('li').eq(sectionIndex).find('a').addClass(ACTIVE);
+					closeVideoModal(event);
 				}
 			}
 		}

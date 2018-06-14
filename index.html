@@ -19,6 +19,9 @@
 </head>
 
 <body>
+	
+	
+	
 
 <!--    <a class="action-btn" id="open-newsletter">Notify me</a>-->
     <div id="loading">
@@ -26,10 +29,20 @@
             <img alt="" class="loading-logo" src="img/logo-colored.png"><span class="loading-text">Loading Viral Campaign</span><span class="load"><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span><span class="loading-dot"></span></span>
         </div>
     </div>
+	
     <div id="fullpage">
+		
         <div class="section" id="section0">
+			
             <!--<img alt="" class="home-logo" src="img/logo.png">-->
+			
             <div class="slideshow-home">
+
+
+
+				                <video id="videofront" autoplay loop muted>
+                      <source src="video/video.mp4" type="video/mp4">
+                </video>
             </div>
             <!--
             <video class="home-video" autoplay loop>
@@ -37,25 +50,40 @@
             </video>
             -->
             <div class="slide-overlay">
+
+
             </div>
             <div class="intro">
+				
                 <div class="container open-anim opacity-0" id="clock">
                 </div>
                 <h1 class="boldify"> DARE TO SHARE </h1>
                 <p class="open-anim opacity-0"><strong>90 winners win a fully paid holiday</strong> to the sunnny island of Cyprus
                     <br> plus one lucky tionaut will win the luxury holiday of a lifetime worth up to</p>
                 <p class="open-anim opacity-0 money"><strong>$100,000</strong></p>
-                <a class="light-btn open-anim opacity-0" id="button-more">More Information</a>
+                <a class="light-btn open-anim opacity-0" id="button-more">WATCH VIDEO</a>
             </div>
             <div class="scroll-indicator">
                 <a id="indicator-scroll"><i class="icon ion-ios-arrow-down"></i></a>
             </div>
+			<div id="gd-modal-overlay" class="gd-modal">
+				<div class="gd-inner">
+					<div class="gd-video-wrapper">
+						<a href="#" class="gd-close gd-hide-modal" id="gd-close-anchor"><i class="far fa-times-circle"></i></a>
+						                <video id="videofront2" controls>
+                      <source src="video/video.mp4" type="video/mp4">
+                </video> 
+					</div>
+				</div>
+			</div>
         </div>
+<!--
         <div class="section" id="section_video">
 
                 <video id="videofront" controls>
                       <source src="video/video.mp4" type="video/mp4">
                 </video> 
+-->
 <!--
            <div class="SpanFrame"> <span class="span1"></span><span class="span2"></span><span class="span3"></span><span class="span4"></span>
 
@@ -67,7 +95,7 @@
                 <h1 class="Boldify"> Video <br> Section </h1></div>
         </div>
 -->
-        </div>
+<!--        </div>-->
         <div class="section" id="section1">
             <section class="text-left-block" id="about">
                 <div class="row row-no-margin">
@@ -92,6 +120,13 @@
                 <div class="col-xs-12 col-sm-12 col-lg-12 left-center-text split-section spec-padding-bottom">
                     <br>
                     <h3 class="boldify" style="font-size: 6rem;font-family: Montserrat;letter-spacing: 0.25rem;">THE FACTS</h3>
+					
+<!--
+					                <video id="videofront" controls>
+                      <source src="video/video.mp4" type="video/mp4">
+                </video>
+-->
+					
                     <div class="facts-container">
                         <a class="fact">
                             <div class="fact-item">
@@ -402,6 +437,8 @@
             </div>
         </div>
     </div>
+	
+	
     
     <script src="https://code.jquery.com/jquery-1.12.3.min.js">
     </script>
@@ -434,9 +471,12 @@
         });
     </script>
     <script src="js/main-fullpage.js">
+		
     </script>
-    <script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/392/jquery.fitvids.js">
     </script>
+	
+	
 </body>
 
 </html>

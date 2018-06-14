@@ -19,7 +19,7 @@ $(window).load(function() {
         "info" === e.target.id || $("#info").find(e.target).length || $(".fp-section , #info").removeClass("newsletter-opened");$("body").removeClass("bodyfix");$(".action-btn").removeClass("Notifyfix")
     }), $("#notifyMe").notifyMe(), $("#fullpage").fullpage({
         navigation: !0,
-        navigationTooltips: ["Home", "Video", "About", "The Facts", "The Holiday", "Dare-To-Share", "Announcements & Updates", "Map" , "Details"],
+        navigationTooltips: ["Home", "About", "The Facts", "The Holiday", "Dare-To-Share", "Announcements & Updates", "Map" , "Details"],
         responsiveWidth: 1025
     }), $(window).width() < 1025 && $("#invert-slideshow").insertAfter("#invert-text"), $(window).resize(function() {
         $(window).width() < 1025 ? $("#invert-slideshow").insertAfter("#invert-text") : $("#invert-text").insertAfter("#invert-slideshow")
