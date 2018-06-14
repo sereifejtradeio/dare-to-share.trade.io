@@ -3,3 +3,4 @@
 langcache/*
 !langcache/README.md
 /vendor
+.idea/
