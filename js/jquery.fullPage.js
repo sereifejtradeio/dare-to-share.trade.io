@@ -1719,6 +1719,7 @@
 function openVideoModal(event) {
 	event.preventDefault();
 	console.log("Modal should Open");
+	 $( "#gd-modal-overlay" ).css("display","block");
 	 $( "#gd-modal-overlay" ).animate({
     top: 0
   }, 200, function() {
@@ -1730,6 +1731,7 @@ function openVideoModal(event) {
 
 function closeVideoModal(event) {
 	event.preventDefault();
+	$( "#gd-modal-overlay" ).css("display","none");
 	$('#videofront2').trigger('pause');
 		 $( "#gd-modal-overlay" ).animate({
     top: 1000
@@ -1750,11 +1752,7 @@ $('#LeaderboardCont > iframe').css("height", heightL );
 
 });
 
-setTimeout(
-  function() 
-  {
-    //do something special
-}, 5000);
+
 
 //===================================
 // Video Modal Triggers

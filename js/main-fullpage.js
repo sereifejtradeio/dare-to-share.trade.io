@@ -20,6 +20,12 @@ $(window).load(function() {
   $('#LeaderboardCont > iframe').css("width", widthL );
 $('#LeaderboardCont > iframe').css("height", heightL );
 	
+		setTimeout(
+	  function() 
+	  {
+		  $('iframe > body').css("background", "black");
+		
+	}, 2000);
 	
     $("#open-newsletter , .close-newsletter").on("click", function() {
         return $(".fp-section , #info").toggleClass("newsletter-opened"), $("body").toggleClass("bodyfix"),$(".action-btn").toggleClass("Notifyfix"), !1
