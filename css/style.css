@@ -1499,12 +1499,14 @@ p.fact-sub-text {
     box-shadow: black 0px 0px 10px 0px;
 }
 
+.left-center-part .light-btn:hover,
 .intro .light-btn:hover {
     background: transparent !important;
     color: #fff !important;
     border-color: #fff !important
 }
-
+.left-center-part .light-btn:focus,
+.left-center-part .light-btn:active,
 .intro .light-btn:focus,
 .intro .light-btn:active {
     background: #fff;
