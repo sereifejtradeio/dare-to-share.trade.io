@@ -27,7 +27,7 @@ $(document).ready(function(){
 
     $('.slideshow-about').vegas({
         slides: [
-            { src: 'img/03.jpg' },
+            { src: 'img/example.jpg' },
 //            { src: '../img/02.jpg' },
 //            { src: 'img/slide-3-about.jpg' },
         ],

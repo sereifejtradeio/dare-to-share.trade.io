@@ -1127,7 +1127,7 @@ div#overlay12 {
     width: 100%;
     height: 100%;
     display: block;
-    background: url(../img/03.jpg);
+    background: url(../img/example.jpg);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     top: 0;
