@@ -3098,6 +3098,7 @@ header .credits {
   width: 100%;
   display: flex;
   list-style: none;
+  background: rgba(0, 0, 0, 0.46);
 }
 .contentG nav.main-navG ul li {
   background: #272e38;
