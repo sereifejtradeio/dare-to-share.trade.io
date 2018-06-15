@@ -54,3 +54,23 @@ $('#LeaderboardCont > iframe').css("height", heightL );
 });
 
 
+/*
+Project/design by Jonathan Quintin
+https://dribbble.com/shots/1346874-Weather-Dashboard-Global-Outlook-5?list=users&offset=71
+
+View in Full Page mode!
+*/
+
+$('.main-navG ul li').click(function() {
+  $('.main-navG ul li').removeClass('active');
+  $(this).addClass('active');
+});
+
+$('.menuicon').click(function() {
+  $('.ul-menuG').css('bottom', '-150%');
+  $(this).next('.ul-menu').css('bottom', '0');
+});
+
+$('.ul-menu-close').click(function() {
+  $('.ul-menuG').css('bottom', '-150%');
+});
