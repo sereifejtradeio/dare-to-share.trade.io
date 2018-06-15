@@ -3249,44 +3249,9 @@ header .credits {
 /********************************
 Background gradients & images
 ********************************/
-.contentG nav.main-navG ul li.active.weather {
-  background: #00fe9e;
-  /* Old browsers */
-  background: url("http://www.tums-mc.de/img/points1.png"), -moz-linear-gradient(-45deg, #00fe9e 30%, #acff3d 70%);
-  /* FF3.6+ */
-  background: url("http://www.tums-mc.de/img/points1.png"), -webkit-gradient(linear, left top, right bottom, color-stop(30%, #00fe9e), color-stop(70%, #acff3d));
-  /* Chrome,Safari4+ */
-  background: url("http://www.tums-mc.de/img/points1.png"), -webkit-linear-gradient(-45deg, #00fe9e 30%, #acff3d 70%);
-  /* Chrome10+,Safari5.1+ */
-  background: url("http://www.tums-mc.de/img/points1.png"), -o-linear-gradient(-45deg, #00fe9e 30%, #acff3d 70%);
-  /* Opera 11.10+ */
-  background: url("http://www.tums-mc.de/img/points1.png"), -ms-linear-gradient(-45deg, #00fe9e 30%, #acff3d 70%);
-  /* IE10+ */
-  background: url("http://www.tums-mc.de/img/points1.png"), linear-gradient(135deg, #00fe9e 30%, #acff3d 70%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fe9e', endColorstr='#acff3d',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-}
 
-.contentG nav.main-navG ul li.active.gallery {
-  background: #bbc0f7;
-  /* Old browsers */
-  background-image: url("http://www.tums-mc.de/img/points1.png"), -moz-linear-gradient(-45deg, #bbc0f7 30%, #2afcef 70%);
-  /* FF3.6+ */
-  background-image: url("http://www.tums-mc.de/img/points1.png"), -webkit-gradient(linear, left top, right bottom, color-stop(30%, #bbc0f7), color-stop(70%, #2afcef));
-  /* Chrome,Safari4+ */
-  background-image: url("http://www.tums-mc.de/img/points1.png"), -webkit-linear-gradient(-45deg, #bbc0f7 30%, #2afcef 70%);
-  /* Chrome10+,Safari5.1+ */
-  background-image: url("http://www.tums-mc.de/img/points1.png"), -o-linear-gradient(-45deg, #bbc0f7 30%, #2afcef 70%);
-  /* Opera 11.10+ */
-  background-image: url("http://www.tums-mc.de/img/points1.png"), -ms-linear-gradient(-45deg, #bbc0f7 30%, #2afcef 70%);
-  /* IE10+ */
-  background-image: url("http://www.tums-mc.de/img/points1.png"), linear-gradient(135deg, #bbc0f7 30%, #2afcef 70%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbc0f7', endColorstr='#2afcef',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-}
-
+.contentG nav.main-navG ul li.active.weather,
+.contentG nav.main-navG ul li.active.gallery,
 .contentG nav.main-navG ul li.active.history {
   background: #e535e2;
   /* Old browsers */
@@ -3346,4 +3311,23 @@ Background gradients & images
 nav.main-navG ul li.active span {
     color: black;
     text-shadow: black 0px 0px 3px;
+}
+.lb_sub {
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 2.6rem;
+	font-weight: 600;
+}
+.lb_sub a
+{
+	text-shadow:white 0px 0px 5px;
+}
+.main-navG h4
+{
+	width: 80%;
+    margin: auto auto 9rem auto;
+    font-size: 2.5rem;
 }
