@@ -6,8 +6,8 @@ RewriteBase /
 # Force search engines to use new-120adv-website.herokuapp.com
 RewriteCond %{HTTP_HOST} !^dare-to-share-landing-page.herokuapp.com$
 RewriteRule ^(.*) https://dare-to-share-landing-page.herokuapp.com/$1 [R=301,L]
-#RewriteCond %{HTTP_HOST} !^new.trade.io$
-#RewriteRule ^(.*) http://new.trade.io/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} !^dare-to-share.trade.io$
+#RewriteRule ^(.*) http://dare-to-share.trade.io/$1 [R=301,L]
 
 <IfModule mod_deflate.c>
   # Compress HTML, CSS, JavaScript, Text, XML and fonts
