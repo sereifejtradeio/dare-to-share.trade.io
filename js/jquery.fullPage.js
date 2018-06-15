@@ -1772,7 +1772,7 @@ $(window).scroll(function() {
 			e.preventDefault();
 
 			var index = $(this).index();
-			scrollPage($('.fp-section').eq(4));
+			scrollPage($('.fp-section').eq(1));
 
 //			 What you have to do here? The value to change is only the eq(X) just above.
 //			 Home      = 0
