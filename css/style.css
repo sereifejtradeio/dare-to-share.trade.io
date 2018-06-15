@@ -593,8 +593,8 @@ sup {
 */
 }
 .e-widget-wrapper iframe {
-    /* transform: scale(0.7); */
-    margin-top: 16rem !important;
+     transform: scale(0.6);
+    margin-top: -10rem !important;
 }
 @-webkit-keyframes ring {
     0% {
