@@ -1745,10 +1745,10 @@ function closeVideoModal(event) {
 $( window ).resize(function() {
 	
   var widthL = $('#LeaderboardCont').width();
-	var heightL = $('#LeaderboardCont').height();
+//	var heightL = $('#LeaderboardCont').height();
 
-  $('#LeaderboardCont > iframe').css("width", widthL );
-$('#LeaderboardCont > iframe').css("height", heightL );
+  $('#LeaderboardCont > iframe').css("width", widthL/2 );
+//$('#LeaderboardCont > iframe').css("height", heightL );
 
 });
 

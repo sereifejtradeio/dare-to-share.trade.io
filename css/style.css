@@ -3343,7 +3343,7 @@ Background gradients & images
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecd32', endColorstr='#f75e73',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-li.gallery.active span {
+nav.main-navG ul li.active span {
     color: black;
     text-shadow: black 0px 0px 3px;
 }
