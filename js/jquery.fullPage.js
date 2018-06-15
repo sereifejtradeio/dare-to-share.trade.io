@@ -1784,8 +1784,13 @@ $(window).scroll(function() {
 //
 //			 Here is set the anchor to send user from home to about.
 		});
-		
-		
+
+        $(document).on('click', '.view-leaderboard-btn', function (e) {
+            e.preventDefault();
+
+            var index = $(this).index();
+            scrollPage($('.fp-section').eq(4));
+		});
 
 		//Scrolls the slider to the given slide destination for the given section
 		function slideBulletHandler(e) {
