@@ -2839,12 +2839,14 @@ p.fact-sub-text {
     z-index: 999999;
 }
 video#videofront {
-    filter: blur(6px);
-    position: absolute;
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
+    text-align: center;
+    position: fixed;
+    min-width: 34%;
+    min-height: 25%;
+    width: auto;
 }
 video#videofront2 {
     top: 0;
@@ -2856,6 +2858,14 @@ video#videofront2 {
     position: absolute;
     width: 80%;
     box-shadow: black 0px 0px 18px 1px;
+}
+div#video_cc {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(21, 46, 84, 0.49);
+    z-index: 111;
+    position: absolute;
 }
 
 #gd-modal-overlay
@@ -3336,3 +3346,7 @@ nav.main-navG ul li.active span {
     margin: auto auto 9rem auto;
     font-size: 2.5rem;
 }
+#lb
+{
+	min-width: 320px;
+}	

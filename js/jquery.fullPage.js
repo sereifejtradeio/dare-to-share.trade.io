@@ -1745,10 +1745,14 @@ function closeVideoModal(event) {
 $( window ).resize(function() {
 	
   var widthL = $('#LeaderboardCont').width();
-//	var heightL = $('#LeaderboardCont').height();
+	var widthV = $('.slideshow-home > .vegas-wrapper').width();
+	var heightV = $('.slideshow-home > .vegas-wrapper').height();
+
 
   $('#LeaderboardCont > iframe').css("width", widthL/2 );
-//$('#LeaderboardCont > iframe').css("height", heightL );
+//	
+//  $('#videofront').css("width", widthV+heightV/4);
+//  $('#videofront').css("height", heightV);
 
 });
 
@@ -1789,7 +1793,7 @@ $(window).scroll(function() {
             e.preventDefault();
 
             var index = $(this).index();
-            scrollPage($('.fp-section').eq(4));
+            scrollPage($('.fp-section').eq(5));
 		});
 
 		//Scrolls the slider to the given slide destination for the given section
