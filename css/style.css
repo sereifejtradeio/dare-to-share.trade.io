@@ -1280,6 +1280,10 @@ div#overlayplus14 {
     #overlayplus34 {
         padding-top: 230px;
     }
+		#videofront
+	{
+		display: none;
+	}
 
 }
 
@@ -1294,6 +1298,7 @@ div#overlayplus14 {
     div#overlayplus34 h3 {
         font-size: 1.8rem;
     }
+
 }
 
 a.fact:hover {
@@ -3346,4 +3351,11 @@ nav.main-navG ul li.active span {
 	width: 80%;
     margin: auto auto 9rem auto;
     font-size: 2.5rem;
+}
+
+#lb
+{
+	min-width: 360px;
+	margin-bottom: 8rem;
+	height: 540px;
 }
