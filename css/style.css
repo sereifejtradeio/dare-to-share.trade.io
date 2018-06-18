@@ -2734,6 +2734,15 @@ p.fact-sub-text {
     p.notify-valid {
         font-size: 1.2rem
     }
+
+    #button-more {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #button-enter-competition {
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-device-width: 667px) and (orientation: landscape) {
