@@ -1599,7 +1599,15 @@ p.fact-sub-text {
 .slideshow-about {
     height: 100vh !important
 }
-
+#car_cta
+{
+	text-align: center;
+}
+#car_cta,
+#carousel-services
+{
+	display: none !important;
+}
 #carousel-services .carousel-control {
     position: absolute;
     top: auto;
@@ -1696,6 +1704,7 @@ p.fact-sub-text {
     color: white;
     font-weight: bolder;
     line-height: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .slideshow-services {
@@ -3021,6 +3030,15 @@ ul.hiw {
 
 @media only screen and (max-width: 1024px) 
 {
+	#car_cta,
+	#carousel-services
+	{
+		display: block !important;
+	}
+	#factsbox
+	{
+		display: none !important;
+	}
 	ul.hiw li{
 		text-align: center;
 		display: block;
@@ -3358,4 +3376,25 @@ nav.main-navG ul li.active span {
 	min-width: 360px;
 	margin-bottom: 8rem;
 	height: 540px;
+}
+div#factsbox {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    max-width: 920px;
+    float: left;
+}
+
+.fbx {
+    display: inline-block;
+    max-width: 250px;
+}
+
+span.icon-services {
+    font-size: 4rem;
+    color: #6ab4ff;
+}
+
+.fbx h4 {
+    font-size: 2rem;
 }
