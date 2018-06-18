@@ -1606,11 +1606,7 @@ p.fact-sub-text {
 {
 	text-align: center;
 }
-#car_cta,
-#carousel-services
-{
-	display: none !important;
-}
+
 #carousel-services .carousel-control {
     position: absolute;
     top: auto;
@@ -3030,9 +3026,18 @@ ul.hiw {
     max-width: 1300px;
     margin: auto;
 }
-
-@media only screen and (max-width:1250px)
+/*#car_cta,*/
+#carousel-services
 {
+	display: none !important;
+}
+
+@media only screen and (max-width:1270px)
+{
+	div#invert-text {
+    text-align: center;
+}
+/*
 		#car_cta,
 	#carousel-services
 	{
@@ -3041,6 +3046,19 @@ ul.hiw {
 	#factsbox
 	{
 		display: none !important;
+	}
+*/
+	.h2desk
+	{
+		display: none;
+	}
+	.fbx
+	{
+		max-width: 450px !important;
+	}
+	#factsbox
+	{
+		margin-top:-0.6rem;
 	}
 }
 
