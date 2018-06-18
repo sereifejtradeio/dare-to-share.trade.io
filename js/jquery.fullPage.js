@@ -1751,9 +1751,6 @@ $( window ).resize(function() {
 //$('#LeaderboardCont > iframe').css("height", heightL );
 
 	
-//		var dw = $('#invert-text').height();
-//	var dh = $(document).height();
-//	$('#invert-slideshow').css("height", dw);
 	
 });
 
@@ -1767,8 +1764,8 @@ $( window ).resize(function() {
 $('#button-more').on('click', openVideoModal);
 $('#button-more').on('touchstart', openVideoModal);
 
-$('#gd-modal-overlay').on('click', closeVideoModal);
-$('#gd-modal-overlay').on('touchstart', closeVideoModal);
+$('.gd-close').on('click', closeVideoModal);
+$('.gd-close').on('touchstart', closeVideoModal);
 		
 $(window).scroll(function() {
 //closeVideoModal(event);
