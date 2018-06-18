@@ -20,6 +20,10 @@ $(window).load(function() {
   $('#LeaderboardCont > iframe').css("width", widthL/2 );
 //$('#LeaderboardCont > iframe').css("height", heightL );
 	
+		var dw = $('#invert-text').height();
+	var dh = $(document).height();
+	$('.sl2').css("height", dw);
+	
 		setTimeout(
 	  function() 
 	  {
