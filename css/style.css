@@ -3028,9 +3028,9 @@ ul.hiw {
     margin: auto;
 }
 
-@media only screen and (max-width: 1024px) 
+@media only screen and (max-width:1444px)
 {
-	#car_cta,
+		#car_cta,
 	#carousel-services
 	{
 		display: block !important;
@@ -3039,6 +3039,11 @@ ul.hiw {
 	{
 		display: none !important;
 	}
+}
+
+@media only screen and (max-width: 1024px) 
+{
+
 	ul.hiw li{
 		text-align: center;
 		display: block;
