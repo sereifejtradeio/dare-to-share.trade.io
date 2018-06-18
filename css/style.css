@@ -593,8 +593,8 @@ sup {
 */
 }
 .e-widget-wrapper iframe {
-     transform: scale(0.6);
-    margin-top: -10rem !important;
+     /* transform: scale(0.6); */
+     /* margin-top: 15rem !important; */
 }
 #LeaderboardCont {
     margin-bottom: 200px;
@@ -3402,4 +3402,7 @@ span.icon-services {
 
 .fbx h4 {
     font-size: 2rem;
+}
+.e-widget-wrapper {
+    margin-top: 3rem !important;
 }
