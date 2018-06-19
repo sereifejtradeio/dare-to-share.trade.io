@@ -24,10 +24,18 @@ $(window).load(function() {
 	var dh = $(document).height();
 	$('.sl2').css("height", dw);
 	
+
+	
 		setTimeout(
 	  function() 
 	  {
 		  $('iframe > body').css("background", "black");
+		  			var docWidth = $(document).width();
+	var docHeight = $(document).height();
+	var videoWidth = $("#videofront").width();
+	var videoHeight = $("#videofront").height();
+	var calcLeft = (videoWidth / docWidth )*-333;
+	$(".vegas-wrapper > video").css("left", calcLeft);
 		
 	}, 2000);
 	

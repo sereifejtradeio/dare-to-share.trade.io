@@ -47,7 +47,7 @@
 body .vegas-container {
     overflow: hidden !important;
     position: relative;
-    filter: saturate(1.7);
+    /* filter: saturate(1.7); */
 }
     
 .vegas-video {

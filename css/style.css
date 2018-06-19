@@ -1133,7 +1133,7 @@ div#overlay12 {
     width: 100%;
     height: 100%;
     display: block;
-    background: url(../img/example.jpg);
+    background: url(../img/example_blurred.jpg);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     top: 0;
@@ -1142,7 +1142,7 @@ div#overlay12 {
     left: 0;
     z-index: -2;
     background-size: cover;
-    filter: blur(10px);
+    /* filter: blur(10px); */
     background-position: center center;
 }
 
@@ -2866,14 +2866,26 @@ p.fact-sub-text {
     z-index: 999999;
 }
 video#videofront {
-    text-align: center;
-    position: fixed;
-	left: 0;
-    right: 0;
-    top: 0;
-    min-width: 34%;
-    min-height: 25%;
-    width: auto;
+text-align: center;
+position: fixed;
+
+left: 0;
+
+right: 0;
+
+top: 0;
+
+min-width: 34%;
+
+min-height: 25%;
+
+width: auto;
+
+width: -moz-available;
+
+
+min-height: -moz-available;
+
 }
 video#videofront2 {
     top: 0;
@@ -3438,6 +3450,30 @@ span.icon-services {
 .fbx h4 {
     font-size: 2rem;
 }
+/*
 .e-widget-wrapper {
     margin-top: 3rem !important;
+}
+*/
+
+.e-widget-wrapper iframe {
+    text-align: center;
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	margin:auto !important;
+}
+
+.vegas-wrapper > a {
+    position: absolute;
+    left: 0;
+    top: 76rem;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: 220px;
+    height: 47px;
 }

@@ -1754,9 +1754,15 @@ $( window ).resize(function() {
 	$('.sl2').css("height", dw);
 	
 	
+		var docWidth = $(document).width();
+	var docHeight = $(document).height();
+	var videoWidth = $("#videofront").width();
+	var videoHeight = $("#videofront").height();
+	var calcLeft = (videoWidth / docWidth )*-333;
+	$(".vegas-wrapper > video").css("left", calcLeft);
+	
+	
 });
-		
-
 
 
 
