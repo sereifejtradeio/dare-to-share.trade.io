@@ -2473,6 +2473,7 @@ p.fact-sub-text {
     right: 2rem;
     z-index: 999;
     top: 2rem;
+    height: 50px;
 }
 
 #social-nav ul {
@@ -3414,8 +3415,14 @@ nav.main-navG ul li.active span {
 }
 .lb_sub a
 {
-	text-shadow:white 0px 0px 5px;
+	text-shadow: #000000 0px 0px 8px;
+	color: #4a9ce2 !important;
+	text-transform: lowercase;
+	margin-left: 2px;
+	margin-right: 2px;
+	font-weight: 800;
 }
+.lb_sub a:hover {text-shadow: #1b476d 0px 0px 8px;}
 .main-navG h4
 {
 	width: 80%;
@@ -3476,4 +3483,37 @@ span.icon-services {
     text-align: center;
     width: 220px;
     height: 47px;
+}
+a#button-more i {
+    font-size: 2rem;
+    position: relative;
+    top: 4px;
+    margin-left: 1rem;
+}
+a#button-more {
+	background: #5A95CE;
+	border: 0.1rem solid #4a80b2;
+	color: #fff;
+}
+
+a#button-enter-competition {
+    background: #28a745;
+    border: 0.1rem solid #28a745;
+    color: #fff;
+}
+a#termscondition {
+    background: none !important;
+    color: white !important;
+    border: none;
+    box-shadow: none;
+    transition: all 1s;
+    display: block;
+}
+
+a#termscondition:hover {
+    /* text-decoration: underline !important; */
+    color: #29a645 !important;
+}
+div#section3 {
+    background: #0b3240;
 }
