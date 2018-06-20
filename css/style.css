@@ -922,11 +922,11 @@ sup {
     max-width: 14rem;
     background-image: url(../img/logo.png);
     z-index: 999;
-    width: 50%;
-    height: 50%;
+    width: 20%;
+    height: 20%;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 0;
 }
 
 #c9-button.c9-image img {
@@ -3517,6 +3517,7 @@ a#button-enter-competition {
     border: 0.1rem solid #28a745;
     color: #fff;
 }
+a#faq,
 a#termscondition {
     background: none !important;
     color: white !important;
@@ -3524,8 +3525,10 @@ a#termscondition {
     box-shadow: none;
     transition: all 1s;
     display: block;
+    width: 260px;
 }
 
+a#faq:hover,
 a#termscondition:hover {
     /* text-decoration: underline !important; */
     color: #29a645 !important;
