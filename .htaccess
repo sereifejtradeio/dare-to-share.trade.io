@@ -4,16 +4,16 @@ RewriteEngine On
 RewriteBase /
 
 # Force search engines to use new-120adv-website.herokuapp.com
-RewriteCond %{HTTP_HOST} !^dare-to-share-landing-page.herokuapp.com$
-RewriteRule ^(.*) https://dare-to-share-landing-page.herokuapp.com/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} !^dare-to-share-landing-page.herokuapp.com$
+#RewriteRule ^(.*) https://dare-to-share-landing-page.herokuapp.com/$1 [R=301,L]
 #RewriteCond %{HTTP_HOST} !^dare-to-share.trade.io$
 #RewriteRule ^(.*) http://dare-to-share.trade.io/$1 [R=301,L]
 
-AuthType Basic
-AuthName "restricted area"
+#AuthType Basic
+#AuthName "restricted area"
 #AuthUserFile /Applications/XAMPP/xamppfiles/htdocs/dare-to-share.trade.io/.htpasswd
-AuthUserFile /app/.htpasswd
-require valid-user
+#AuthUserFile /app/.htpasswd
+#require valid-user
 
 <IfModule mod_deflate.c>
   # Compress HTML, CSS, JavaScript, Text, XML and fonts
