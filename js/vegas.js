@@ -13,9 +13,9 @@ $(document).ready(function(){
 
     $('.slideshow-home').vegas({
         slides: [
-            { src: 'img/img1.jpg' },
-            { src: 'img/img1.jpg' },
-            { src: 'img/img1.jpg' },
+            { src: 'img/background1.jpg' },
+            { src: 'img/background2.jpg' },
+            { src: 'img/background3.jpg' },
         ],
 
         // Delay beetween slides in milliseconds.
