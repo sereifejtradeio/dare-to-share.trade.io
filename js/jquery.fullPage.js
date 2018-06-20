@@ -1742,6 +1742,11 @@ function closeVideoModal(event) {
 
 }
 		
+$(document).scroll(function(){
+	
+	
+});
+		
 $( window ).resize(function() {
 	
   var widthL = $('#LeaderboardCont').width();
@@ -1801,7 +1806,14 @@ $(window).scroll(function() {
             e.preventDefault();
 
             var index = $(this).index();
-            scrollPage($('.fp-section').eq(4));
+            scrollPage($('.fp-section').eq(5));
+		});
+		
+		        $(document).on('click', '.ttop', function (e) {
+            e.preventDefault();
+
+            var index = $(this).index();
+            scrollPage($('.fp-section').eq(0));
 		});
 
 		//Scrolls the slider to the given slide destination for the given section
@@ -2080,9 +2092,11 @@ $(window).scroll(function() {
 				$(SECTION_NAV_SEL).find(ACTIVE_SEL).removeClass(ACTIVE);
 				if (name) {
 					$(SECTION_NAV_SEL).find('a[href="#' + name + '"]').addClass(ACTIVE);
+					
 				} else {
 					$(SECTION_NAV_SEL).find('li').eq(sectionIndex).find('a').addClass(ACTIVE);
 					closeVideoModal(event);
+//					$('.ttop').css("display","none");
 				}
 			}
 		}

@@ -446,9 +446,19 @@
                             <p style="font-size:1.8rem;">Start Sharing to Win</p>
                             <br>
                             <p style="font-size:2rem;color:white">90 winners will win a fully paid trip to sunny Cyprus! 1 of these winners will ALSO win a luxury VIP holiday around the world, with 100,000 USD spending money
+                        <br> <br>
+							</p>
+							<p style="font-size:2.5rem;text-align: center;color: white;font-weight: 600;text-transform: uppercase">The Agenda</p>
+							
                         <br>
-                        <br> Agenda: Welcome cocktails, luxury cruise around the island, tour of the old city of Limassol, visit and goodie bags to the trade.io Cyprus serviced office, black tie gala dinner extravaganza!
-</p>
+							<ul class="agendalist">
+								<li><i class="fas fa-glass-martini"></i> <p>Welcome cocktails</p></li>
+								<li><i class="fas fa-ship"></i> <p>luxury cruise around the island</p></li>
+								<li><i class="fas fa-compass"></i> <p>tour of the old city of Limassol</p></li>
+								<li><i class="fab fa-black-tie"></i> <p>black tie gala dinner extravaganza</p></li>
+								<li><i class="fas fa-gift"></i> <p>visit and goodie bags to the trade.io Cyprus serviced office</p></li>
+							</ul>
+
                         </div>
                     </div>
                 </div>
@@ -471,10 +481,26 @@
 		  <br>
 						<h1>Leaderboard - 31st of July</h1>
 						<br>
-                        <iframe id="lb" frameborder='0' height="500px" src='https://gleam.io/E00qz/leaderboard?limit=30' allowtransparency="true"></iframe>
-
+						  <div id="tabs">
+				  <ul>
+					<li><a href="#tabs-1">20/07 - 20/08</a></li>
+					<li><a href="#tabs-2">21/08 - 21/09</a></li>
+					<li><a href="#tabs-3">22/09 - 22/10</a></li>
+				  </ul>
+                       
+							  <div id="tabs-1">
+					 <iframe id="lb" frameborder='0' height="500px" src='https://gleam.io/E00qz/leaderboard?limit=30' allowtransparency="true"></iframe>
+					  </div>
+					  <div id="tabs-2">
+<!--					 <iframe id="lb" frameborder='0' height="500px" src='https://gleam.io/E00qz/leaderboard?limit=30' allowtransparency="true"></iframe>-->
+					  </div>
+					  <div id="tabs-3">
+<!--					 <iframe id="lb" frameborder='0' height="500px" src='https://gleam.io/E00qz/leaderboard?limit=30' allowtransparency="true"></iframe>-->
+					  </div>
+		  	</div>
 		</div>
   
+<!--
   <nav class="main-navG">
 
     <ul>
@@ -503,27 +529,9 @@
 		<span>CHECK THE LEADERBOARD HERE</span>
       </li>
       
-<!--
-      
-      <li class="likes">
-        <div class="menuicon fa fa-bars"></div>
-
-        <div class="icon fa fa-heart-o fa-2x"></div>
-        <span>Likes</span>
-      </li>
--->
-      
-      
-<!--
-      <li class="comments">
-        <div class="menuicon fa fa-bars"></div>
-
-        <div class="icon fa fa-comment-o fa-2x"></div>
-        <span>Comments</span>
-      </li>
--->
     </ul>    
   </nav>
+-->
 </div>
                     </div>
 <!--                </div>-->
@@ -620,11 +628,18 @@
                 </div>
             </div>
         </div>
+		
     </div>
 	
 	
     
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
@@ -645,6 +660,8 @@
     </script>
     <script src="js/main-fullpage.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/392/jquery.fitvids.js"></script>
+	
+	<a class="ttop"> <i class="fas fa-angle-up"></i><p>TOP</p></a>
 
 </body>
 
