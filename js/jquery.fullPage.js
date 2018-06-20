@@ -1742,8 +1742,15 @@ function closeVideoModal(event) {
 
 }
 		
-$(document).scroll(function(){
+$(window).scroll(function(){
+	var isHome = $('#fp-nav').find('li').eq(0).find('a').hasClass('active');
 	
+	if (isHome){
+		$('.ttop').css("display","none");
+		
+	}else{
+		$('.ttop').css("display","block");
+	}
 	
 });
 		
@@ -1781,9 +1788,7 @@ $('#button-more').on('touchstart', openVideoModal);
 $('.gd-close').on('click', closeVideoModal);
 $('.gd-close').on('touchstart', closeVideoModal);
 		
-$(window).scroll(function() {
-//closeVideoModal(event);
-})
+
 
 		$(document).on('click', '.button-details , #indicator-scroll', function (e) {
 			e.preventDefault();
