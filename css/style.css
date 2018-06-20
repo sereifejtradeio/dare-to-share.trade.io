@@ -3099,9 +3099,9 @@ ul.hiw {
 	}
 }
 
-@media only screen and (max-width: 1435px) {
-    .vegas-wrapper > a {
-        top: 65rem;
+@media only screen and (max-width: 1440px) {
+    .view-leaderboard-btn {
+        top: 65rem !important;
     }
 }
 
