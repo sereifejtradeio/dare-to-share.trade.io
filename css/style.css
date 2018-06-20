@@ -149,6 +149,10 @@ table {
     z-index: 999999
 }
 
+.winners-announcement {
+    font-size: 2rem;
+}
+
 #loading.vanish {
     opacity: 0;
     -webkit-transition: all .4s ease-in-out;
@@ -2637,7 +2641,7 @@ p.fact-sub-text {
 
 @media only screen and (max-width: 480px) {
     .intro {
-        padding: 5rem 5% 0
+        padding: 3rem 0% 0;
     }
     h1 {
         font-size: 3.5rem
@@ -2646,17 +2650,23 @@ p.fact-sub-text {
         font-size: 4rem
     }
     .home-logo {
-        top: 7rem;
+        top: 6rem;
         left: calc(50% - 4rem);
         background-image: url(../img/logo2.png);
-        width: 25%;
+        width: 22%;
     }
     #clock {
-        font-size: 6rem
+        font-size: 4rem
     }
+
+    .sl3 {
+        display: none;
+    }
+
     #clock span {
         font-size: 1.6rem
     }
+
     .action-btn {
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
@@ -2683,6 +2693,7 @@ p.fact-sub-text {
         position: absolute;
         width: 100%;
         bottom: 2rem;
+        top: 0rem;
         right: 0;
         text-align: center
     }
@@ -3178,7 +3189,7 @@ header .credits {
 }
 .contentG .captionG h1 {
   line-height: 60px;
-  font-size: 60px;
+  /*font-size: 60px;*/
   /* text-decoration: underline; */
   text-transform: uppercase;
   letter-spacing: .2em;
