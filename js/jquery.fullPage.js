@@ -1747,8 +1747,10 @@ $(window).scroll(function(){
 	
 	if (isHome){
 		$('.ttop').css("display","none");
+        $('.award-icon').css("bottom","1rem");
 		
 	}else{
+        $('.award-icon').css("bottom","9rem");
 		$('.ttop').css("display","block");
 	}
 	
@@ -1814,12 +1816,19 @@ $('.gd-close').on('touchstart', closeVideoModal);
             scrollPage($('.fp-section').eq(5));
 		});
 		
-		        $(document).on('click', '.ttop', function (e) {
+		$(document).on('click', '.ttop', function (e) {
+			e.preventDefault();
+
+			var index = $(this).index();
+			scrollPage($('.fp-section').eq(0));
+		});
+
+        $(document).on('click', '.award-icon', function (e) {
             e.preventDefault();
 
             var index = $(this).index();
-            scrollPage($('.fp-section').eq(0));
-		});
+            scrollPage($('#section1').eq(0));
+        });
 
 		//Scrolls the slider to the given slide destination for the given section
 		function slideBulletHandler(e) {

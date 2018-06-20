@@ -3461,7 +3461,7 @@ nav.main-navG ul li.active span {
 {
 	min-width: 360px;
 	margin-bottom: 8rem;
-	height: 540px;
+	height: 1650px;
 }
 div#factsbox {
     display: inline-block;
@@ -3561,10 +3561,24 @@ a.ttop {
     text-align: center;
     padding: 14px;
 }
-a.ttop p{
+
+a.award-icon {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: block;
+    bottom: 1rem;
+    right: 8px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px;
+}
+a.ttop p,
+a.award-icon p {
 	font-size: 1.2rem;
 }
-a.ttop i{
+a.ttop i,
+a.award-icon i {
 	font-size: 2.5rem;
 }
 	.ui-tabs .ui-tabs-nav {
