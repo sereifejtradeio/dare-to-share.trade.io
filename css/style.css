@@ -2471,8 +2471,8 @@ p.fact-sub-text {
     position: absolute;
     opacity: 1;
     right: 2rem;
-    bottom: 2rem;
-    z-index: 999
+    z-index: 999;
+    top: 2rem;
 }
 
 #social-nav ul {
