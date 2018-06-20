@@ -3099,6 +3099,12 @@ ul.hiw {
 	}
 }
 
+@media only screen and (max-width: 1440px) {
+    .vegas-wrapper > a {
+        top: 65rem;
+    }
+}
+
 @media only screen and (max-width: 1024px) 
 {
 
