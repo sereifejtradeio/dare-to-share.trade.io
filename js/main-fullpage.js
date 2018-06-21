@@ -15,9 +15,9 @@ $(window).load(function() {
     "use strict";
     var widthL = $('#LeaderboardCont').width();
     $('#LeaderboardCont > iframe').css("width", widthL / 2);
-    var dw = $('#invert-text').height();
+   
     var dh = $(document).height();
-    $('.sl2').css("height", dw);
+   Determinheight();
     setTimeout(function() {
         $('iframe > body').css("background", "black");
         var docWidth = $(document).width();
@@ -25,8 +25,9 @@ $(window).load(function() {
         var videoWidth = $("#videofront").width();
         var videoHeight = $("#videofront").height();
         var calcLeft = (videoWidth / docWidth) * -333;
-        $(".vegas-wrapper > video").css("left", calcLeft)
-    }, 2000);
+        $(".vegas-wrapper > video").css("left", calcLeft);
+	$(".sl2 > .vegas-wrapper").prepend('<script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script> <a class="e-widget no-button generic-loader" href="https://gleam.io/GWwGD/dare-to-share" rel="nofollow"></a>');
+    }, 5000);
     $("#open-newsletter , .close-newsletter").on("click", function() {
         return $(".fp-section , #info").toggleClass("newsletter-opened"), $("body").toggleClass("bodyfix"), $(".action-btn").toggleClass("Notifyfix"), !1
     }), $(document).click(function(e) {
@@ -56,3 +57,19 @@ $('.menuicon').click(function() {
 $('.ul-menu-close').click(function() {
     $('.ul-menuG').css('bottom', '-150%')
 })
+
+$(window).resize(function() {
+Determinheight();
+});
+
+function Determinheight(){
+	 var dw = $('#invert-text').height();
+	var widthW = $(window).width();
+	if(widthW < 1024)
+   {
+	   $('.sl2').css("height", dw + 140);
+   }else
+   {
+	$('.sl2').css("height", dw );
+   }
+}

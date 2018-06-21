@@ -1098,7 +1098,8 @@
             $('#LeaderboardCont > iframe').css("width", widthL / 2);
             var dw = $('#invert-text').height();
             var dh = $(document).height();
-            $('.sl2').css("height", dw);
+//            $('.sl2').css("height", dw);
+//			$('.sl3').css("height", dw +220);
             var docWidth = $(document).width();
             var docHeight = $(document).height();
             var videoWidth = $("#videofront").width();
